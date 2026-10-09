@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#102a43">
+<title>ProtonLoan | Loan Enquiry</title>
+<style>
+:root{--navy:#102a43;--blue:#1769aa;--teal:#13a89e;--ink:#172b4d;--muted:#627d98;--line:#d9e2ec;--bg:#f5f8fc;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:var(--navy);color:#fff;padding:17px 20px}.nav{max-width:1080px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:800;font-size:20px;letter-spacing:-.4px}.brand span{color:#63e6d9}.nav small{color:#d9e2ec}
+.hero{background:linear-gradient(125deg,#102a43,#1769aa);color:#fff;padding:42px 20px 58px}.hero-inner{max-width:1080px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.eyebrow{color:#8ef0e5;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;font-size:12px}.hero h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:12px 0}.hero p{color:#e6f1fb;max-width:550px}.pill{display:inline-block;border:1px solid #77dacf;border-radius:999px;padding:7px 12px;font-size:13px;margin-top:8px}.hero-card{background:#fff;color:var(--ink);padding:24px;border-radius:20px;box-shadow:0 18px 40px #071a2d35}.hero-card h3{margin:0 0 8px;font-size:19px}.hero-card p{color:var(--muted);margin:0;font-size:14px}.hero-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.point{background:#f2f8fb;border-radius:12px;padding:12px;font-size:13px}.point b{display:block;font-size:16px;color:var(--blue)}
+main{max-width:1080px;margin:-25px auto 0;padding:0 20px 42px;position:relative}.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,34px);box-shadow:0 12px 35px #102a4310}.form-heading{display:flex;justify-content:space-between;align-items:start;gap:14px;margin-bottom:22px}.form-heading h2{margin:0 0 5px;font-size:25px}.form-heading p{margin:0;color:var(--muted);font-size:14px}.required-note{font-size:12px;color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:14px;font-weight:700}input,select{width:100%;padding:13px 12px;border:1px solid #bcccdc;border-radius:10px;font-size:16px;color:var(--ink);background:#fff;outline:none}input:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1769aa1c}.hint{font-size:12px;color:var(--muted)}.consent{display:flex;align-items:flex-start;gap:10px;background:#f5f8fc;padding:13px;border-radius:10px;font-size:13px;color:#486581}.consent input{width:18px;height:18px;margin-top:2px;flex:0 0 auto}.btn{width:100%;border:0;border-radius:11px;background:var(--teal);color:#062b35;font-weight:800;font-size:16px;padding:15px;cursor:pointer}.btn:hover{filter:brightness(.96)}.privacy{font-size:12px;color:var(--muted);text-align:center;margin:12px 0 0}.notice{display:none;margin-top:16px;padding:14px;border-radius:10px;background:#e6fffa;color:#065f46;border:1px solid #99f6e4}.notice.show{display:block}.warning{margin-top:18px;background:#fff8e6;border:1px solid #f5d78e;border-radius:12px;padding:14px;font-size:13px;color:#704d00}.sections{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.info{background:#fff;border:1px solid var(--line);padding:18px;border-radius:14px}.info h3{margin:0 0 7px;font-size:16px}.info p{margin:0;color:var(--muted);font-size:13px}footer{background:#102a43;color:#d9e2ec;padding:24px 20px;font-size:12px}footer div{max-width:1080px;margin:auto}footer a{color:#8ef0e5}
+@media(max-width:720px){.hero-inner{grid-template-columns:1fr}.hero{padding-top:32px}.hero-card{max-width:520px}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.sections{grid-template-columns:1fr}.form-heading{display:block}.required-note{display:block;margin-top:8px}.nav small{font-size:11px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">Proton<span>Loan</span></div><small>Loan enquiry portal</small></div></header>
+<section class="hero"><div class="hero-inner">
+<div><div class="eyebrow">Simple • Clear • Convenient</div><h1>Explore your loan options.</h1><p>Share a few basic details and register your interest. Submitting this form is an enquiry only—not a loan approval or offer.</p><div class="pill">✓ No obligation to enquire</div></div>
+<div class="hero-card"><h3>Your next step starts here</h3><p>Complete the enquiry form with accurate contact details. Please do not enter bank passwords, OTPs, Aadhaar/PAN numbers, or upload financial documents here.</p><div class="hero-points"><div class="point"><b>01</b>Share your details</div><div class="point"><b>02</b>Review your enquiry</div><div class="point"><b>03</b>Follow up if you consent</div><div class="point"><b>04</b>Compare terms carefully</div></div></div>
+</div></section>
+<main>
+<section class="form-card">
+<div class="form-heading"><div><h2>Loan enquiry form</h2><p>Fields marked * are required.</p></div><span class="required-note">Takes about 1 minute</span></div>
+<form id="enquiryForm">
+<div class="grid">
+<div class="field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" autocomplete="name" maxlength="80" required placeholder="Enter your full name"></div>
+<div class="field"><label for="mobile">Mobile number *</label><input id="mobile" name="mobile" type="tel" inputmode="numeric" autocomplete="tel" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile number"><span class="hint">Indian mobile number; OTP verification is not enabled yet.</span></div>
+<div class="field"><label for="city">City *</label><input id="city" name="city" autocomplete="address-level2" maxlength="80" required placeholder="Enter your city"></div>
+<div class="field"><label for="amount">Loan amount required *</label><select id="amount" name="amount" required><option value="">Select amount</option><option>Below ₹25,000</option><option>₹25,000–₹50,000</option><option>₹50,001–₹1,00,000</option><option>Above ₹1,00,000</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="purpose">Purpose of loan *</label><select id="purpose" name="purpose" required><option value="">Select purpose</option><option>Personal expenses</option><option>Medical expenses</option><option>Education</option><option>Home or family expenses</option><option>Business</option><option>Other</option></select></div>
+<div class="field"><label for="contactTime">Preferred contact time</label><select id="contactTime" name="contactTime"><option value="">No preference</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+<div class="field full"><label for="email">Email (optional)</label><input id="email" name="email" type="email" autocomplete="email" maxlength="120" placeholder="you@example.com"></div>
+<div class="field full"><div class="consent"><input id="consent" name="consent" type="checkbox" required><label for="consent" style="font-weight:400">I consent to being contacted about this enquiry. I understand this form is only an enquiry and does not guarantee loan approval. I have read the privacy notice.</label></div></div>
+<div class="field full"><button class="btn" type="submit">Submit loan enquiry</button><p class="privacy">Please share only information requested on this form. Never share OTPs, passwords, or banking credentials.</p></div>
+</div>
+<div id="notice" class="notice" role="status" aria-live="polite"></div>
+</form>
+<div class="warning"><strong>Demo notice:</strong> This front-end form currently validates your entries and shows a demo confirmation only. It does not send or save customer details. A secure backend, privacy notice, access controls and appropriate consent setup must be added before collecting real enquiries.</div>
+</section>
+<section class="sections">
+<div class="info"><h3>Clear information</h3><p>Review eligibility, fees, interest rates and repayment terms with the actual lender before accepting an offer.</p></div>
+<div class="info"><h3>Your privacy matters</h3><p>Only collect details you need, explain how they will be used, and restrict access to authorised people.</p></div>
+<div class="info"><h3>No guaranteed approval</h3><p>Any loan decision depends on the lender's own checks, policies and final terms.</p></div>
+</section>
+</main>
+<footer><div>© <span id="year"></span> ProtonLoan · Demo website. Replace this branding and add accurate business/contact and privacy details before public launch.</div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const form = document.getElementById('enquiryForm');
+const notice = document.getElementById('notice');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  if (!form.reportValidity()) return;
+  notice.classList.add('show');
+  notice.textContent = 'Demo submission checked successfully. No information has been sent or saved yet. Connect a secure backend before accepting real customer enquiries.';
+  notice.scrollIntoView({behavior:'smooth', block:'nearest'});
+});
+</script>
+</body>
+</html>
